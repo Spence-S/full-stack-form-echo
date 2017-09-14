@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const logger = require('morgan');
 const api = require('./routes');
 const mongoose = require('mongoose');
+const helmet = require('helmet');
 
 const app = express();
 
@@ -14,6 +15,8 @@ mongoose.connect(
 );
 
 app.use(logger('dev'));
+
+app.use(helmet());
 
 app.use(bodyParser.json());
 
