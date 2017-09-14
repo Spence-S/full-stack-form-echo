@@ -25,9 +25,9 @@
   },
   "scripts": {
     "prestart": "yarn build",
-    "start": "nodemon server",
+    "start": "node server",
     "test:server": "jest ./server/tests/test.js --forceExit",
-    "dev": "react-scripts start",
+    "dev": "nodemon server && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
