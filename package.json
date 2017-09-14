@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start:server": "nodemon server",
-    "test:server": "jest ./server/tests/test.js",
+    "test:server": "jest ./server/tests/test.js --forceExit",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
