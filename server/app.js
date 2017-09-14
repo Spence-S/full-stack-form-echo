@@ -9,8 +9,12 @@ const compression = require('compression');
 
 const app = express();
 
+const mongoDb =
+  `${process.env.MONGODB_URI}/full-stack-form-echo` ||
+  'mongodb://localhost/full-stack-form-echo';
+
 mongoose.connect(
-  'mongodb://localhost/full-stack-form-echo',
+  mongoDb,
   { useMongoClient: true },
   console.log('DB connected!')
 );

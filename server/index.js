@@ -1,3 +1,4 @@
 const app = require('./app');
+const port = process.env.PORT || 8000;
 
-app.listen(8000, console.log('React API server listening on 8000!'));
+app.listen(port, console.log(`React API server listening on ${port}!`));

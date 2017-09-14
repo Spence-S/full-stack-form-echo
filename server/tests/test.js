@@ -10,4 +10,20 @@ describe('server', () => {
         done();
       });
   });
+
+  it('responds to root request with 200', done => {
+    request(app)
+      .post('/api')
+      .send({
+        firstName: 'test name',
+        lastName: 'test name',
+        address: 'test address',
+        company: 'test company'
+      })
+      .then(response => {
+        expect(response.statusCode).toBe(200);
+        expect(response.contentType).toBe('Application/JSON');
+        done();
+      });
+  });
 });

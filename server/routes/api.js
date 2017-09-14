@@ -3,10 +3,6 @@ const Card = require('../models');
 
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
-  res.send('hello world');
-});
-
 router.post('/', async (req, res, next) => {
   try {
     const { firstName, lastName, address, company } = req.body;
