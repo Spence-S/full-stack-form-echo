@@ -5,6 +5,7 @@ const logger = require('morgan');
 const api = require('./routes');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
+const compression = require('compression');
 
 const app = express();
 
@@ -17,6 +18,7 @@ mongoose.connect(
 app.use(logger('dev'));
 
 app.use(helmet());
+app.use(compression());
 
 app.use(bodyParser.json());
 
