@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Card from './Components/Card';
-import Error from './Components/Error';
+import Card from './components/Card';
+import Error from './components/Error';
 
 it('App renders without crashing', () => {
   const div = document.createElement('div');

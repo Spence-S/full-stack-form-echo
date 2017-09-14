@@ -23,6 +23,10 @@ describe('server', () => {
       .then(response => {
         expect(response.statusCode).toBe(200);
         expect(response.contentType).toBe('Application/JSON');
+        expect(response.firstName).toBe('test name');
+        expect(response.lastName).toBe('test name');
+        expect(response.address).toBe('test address');
+        expect(response.compnay).toBe('test company');
         done();
       });
   });
