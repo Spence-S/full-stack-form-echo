@@ -27,9 +27,12 @@
     "prestart": "yarn build",
     "start": "node server",
     "test:server": "jest ./server/tests/test.js --forceExit",
-    "dev": "nodemon server && react-scripts start",
+    "dev": "concurrently \"nodemon server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
   }
 }

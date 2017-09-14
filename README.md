@@ -14,3 +14,8 @@ mongoDB database.
 
 ## CI is built through travis-ci
 Simple unit and integration tests are ran for both the server and the client.
+
+### Demo  
+
+A [Demo of the app](https://ancient-ravine-71434.herokuapp.com/) can be
+found live on heroku for preview. 
