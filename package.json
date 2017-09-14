@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8000/",
-  "engines": ">7.10",
+  "engines": "8",
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.18.1",
