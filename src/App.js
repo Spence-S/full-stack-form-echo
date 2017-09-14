@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Card from './components/Card';
 import Error from './components/Error';
 import axios from 'axios';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {

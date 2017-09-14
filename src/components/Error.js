@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
 import ReactDOM from 'react-dom';
 
 export default class ErrorMessage extends Component {
